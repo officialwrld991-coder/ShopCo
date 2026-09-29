@@ -1,5 +1,5 @@
 import ProductCard from "./ProductCard";
-import { useGetProductsQuery } from "../../api/fakeStoreApi";
+import { useGetProductsQuery } from "../../api/dummyjsonApi";
 
 const ProductList = ({ subtitle, start = 0, limit = 4 }) => {
   const { data, isLoading, error } = useGetProductsQuery();
